@@ -2,7 +2,7 @@
 <h1 align="center">Dota 2 Counter Items for Heroes</h1>
 
 <h2 align="center">About</h2>
-<h3 align="center">Script returns information for us from <a href="https://dota2.fandom.com/wiki/Dota_2_Wiki">Dota2Wiki</a> </h3>
+<h3 align="center">Script returns information from <a href="https://dota2.fandom.com/wiki/Dota_2_Wiki">Dota 2 Wiki</a> </h3>
 
 ---
 
