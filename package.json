@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "chalk": "4.1.0",
+    "dotenv": "^16.0.2",
+    "puppeteer": "^17.0.0",
+    "sync-fetch": "^0.4.1"
+  }
+}
