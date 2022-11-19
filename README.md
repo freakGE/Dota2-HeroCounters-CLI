@@ -8,8 +8,9 @@
 
 ### Prerequisites
 
-- **NodeJS** v16+ (_I haven't tested on older versions_)
 - [STEAM API KEY](https://steamcommunity.com/dev)
+- **NodeJS** v16+
+- **NPM** 8.1.0+
 
 ### Installation
 
@@ -18,6 +19,7 @@
 git clone https://github.com/freakGE/Dota2-HeroCounters-CLI.git
 cd Dota2-HeroCounters-CLI
 echo "STEAM_API_KEY=${KEY}" >> .env
+npm install
 ```
 
 ### Usage
