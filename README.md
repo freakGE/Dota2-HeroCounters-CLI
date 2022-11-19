@@ -10,7 +10,7 @@
 
 - [STEAM API KEY](https://steamcommunity.com/dev)
 - **NodeJS** v16+
-- **NPM** 8.1.0+
+- **npm** 8.1.0+
 
 ### Installation
 
