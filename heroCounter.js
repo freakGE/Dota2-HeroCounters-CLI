@@ -2,8 +2,9 @@ const readline = require("readline");
 const puppeteer = require("puppeteer");
 const fetchSync = require("sync-fetch");
 const chalk = require("chalk");
-const { type } = require("os");
 require("dotenv").config();
+
+const args = process.argv.slice(2);
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -83,12 +84,43 @@ const scrapeCounterItems = async url => {
 };
 
 const fetchItems = () => {
-  const response = fetchSync(
-    `https://api.steampowered.com/IEconDOTA2_570/GetGameItems/v0001/?key=${process.env.STEAM_API_KEY}&format=json&language=en`
-  );
-  const data = response.json();
+  try {
+    const response = fetchSync(
+      `https://api.steampowered.com/IEconDOTA2_570/GetGameItems/v0001/?key=${process.env.STEAM_API_KEY}&format=json&language=en`
+    );
 
-  return data.result.items;
+    const data = response.json();
+
+    return data.result.items;
+  } catch (err) {
+    if (args.includes("-c")) {
+      console.log(
+        `${chalk.red.bold(`API key is missing!`)} ${chalk.green.bold(
+          `You can't see items price without API key.`
+        )}`
+      );
+    }
+    if (args.includes("-k")) return;
+    console.log(
+      `${chalk.bold.green(
+        `To highlight items, enter your Steam API key into ${chalk.magenta(
+          ".env"
+        )} file.\nFor API key, you can visit ${chalk.blue.underline(
+          "(https://steamcommunity.com/dev)"
+        )}`
+      )}`
+    );
+    console.log(
+      `${chalk.bold.yellow(
+        `echo "STEAM_API_KEY=${chalk.magenta.bold("KEY")}" >> .env`
+      )}`
+    );
+    console.log(
+      `${chalk.red.bold(
+        `To hide this message add flag ${chalk.magenta("-k")} to the script`
+      )}`
+    );
+  }
 };
 
 rl.question(
@@ -126,7 +158,7 @@ rl.question(
         console.log(
           `${chalk.bold.red("There is currently no text in this page.")}`
         );
-        console.log(`${chalk.bold.green("Check:")}`);
+        console.log(`${chalk.bold.green("Outputs:")}`);
         [`Hero: ${hero}`, url].map(item => {
           console.log(`${chalk.bold.magenta("⚫")}${item}`);
         });
@@ -138,11 +170,25 @@ rl.question(
       data.map(counterItem => {
         let counterItemText = counterItem;
 
+        if (!items) {
+          console.log(`${chalk.bold.magenta("⚫")}${counterItem}`);
+          return;
+        }
+
         items.map(item => {
           if (counterItem.includes(item.localized_name)) {
             let itemName = item.localized_name;
-            // let itemPrice = item.cost;
-            // ${chalk.bold.yellow(`🟡${itemPrice}`)}
+
+            if (args.includes("-c")) {
+              counterItemText = `${counterItemText.replace(
+                itemName,
+                `${chalk.bold.blue(itemName)} ${chalk.bold.yellow(
+                  `🟡${item.cost}`
+                )}`
+              )}`;
+              return;
+            }
+
             counterItemText = `${counterItemText.replace(
               itemName,
               `${chalk.bold.blue(itemName)}`
