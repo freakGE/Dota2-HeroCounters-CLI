@@ -23,8 +23,21 @@ echo "STEAM_API_KEY=${KEY}" >> .env
 npm install
 ```
 
+### **Flags**
+
+| Flag | Description                                 |
+| ---- | ------------------------------------------- |
+| -c   | Returns items with their price              |
+| -k   | To hide message while not including API key |
+
 ### Usage
 
 ```sh
  node heroCounter.js
 ```
+
+```sh
+ node heroCounter.js -c # + cost
+```
+
+<div align="center"><img src="https://user-images.githubusercontent.com/52050303/203608667-c197019e-6bd7-4f86-8ae3-0171bf7b481d.png" /></div>
