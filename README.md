@@ -33,7 +33,7 @@ npm install
 To use script full potential I recommend to get an [**STEAM API KEY**](https://steamcommunity.com/dev), go to root directory and write
 
 ```sh
-echo "STEAM_API_KEY=$YOURKEY" >> .env # w/o "$"
+echo "STEAM_API_KEY=$YOUR_KEY" >> .env # w/o "$"
 ```
 
 To run script
