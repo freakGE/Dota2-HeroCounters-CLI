@@ -3,6 +3,7 @@
 
 <h2 align="center">About</h2>
 <h3 align="center">Script returns information from <a href="https://dota2.fandom.com/wiki/Dota_2_Wiki">Dota 2 Wiki</a> </h3>
+<div align="center"><img src="https://user-images.githubusercontent.com/52050303/203574213-eefa6c68-02e9-421e-9526-756a725d022f.png" /></div>
 
 ---
 
