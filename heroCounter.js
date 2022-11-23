@@ -1,3 +1,15 @@
+try {
+  require.resolve("puppeteer");
+  require.resolve("sync-fetch");
+  require.resolve("chalk");
+  require.resolve("dotenv");
+} catch (e) {
+  console.log(`Error: ${e.code}`);
+  console.log(`To install modules type:`);
+  console.log(`npm install`);
+  process.exit(e.code);
+}
+
 const readline = require("readline");
 const puppeteer = require("puppeteer");
 const fetchSync = require("sync-fetch");
