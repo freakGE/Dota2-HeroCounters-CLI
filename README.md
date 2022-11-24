@@ -30,7 +30,11 @@ npm install
 
 ### **Usage**
 
-To use script full potential I recommend to get an [**STEAM API KEY**](https://steamcommunity.com/dev/apikey), go to root directory and write
+To fully utilize the script's capabilities, obtain an [**STEAM API KEY**](https://steamcommunity.com/dev/apikey), open a terminal within **Dota2-HeroCounters-CLI**, create an **.env** file, and paste the key into the variable **STEAM_API_KEY**.
+
+<!-- To use script full potential I recommend to get an [**STEAM API KEY**](https://steamcommunity.com/dev/apikey), open terminal inside **Dota2-HeroCounters-CLI**, create **.env** file and paste the key in variable **STEAM_API_KEY** -->
+
+<!-- go to root directory () and write -->
 
 ```sh
 echo "STEAM_API_KEY=$YOUR_KEY" >> .env # w/o "$"
