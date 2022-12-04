@@ -15,14 +15,6 @@
     </div>
 </div>
 
-<style>
-    .thumbnails-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-</style>
-
 ---
 
 ### **Prerequisites**
