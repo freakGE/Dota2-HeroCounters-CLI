@@ -33,14 +33,14 @@ npm install
 
 ### **Flags**
 
-| Flag                 | Description                                    |
-| -------------------- | ---------------------------------------------- |
-| **-items**           | Suggests only items                            |
-| **-heroes**          | Suggests only heroes                           |
-| **-utility**         | Suggests only utilityt heroes. (Default: Core) |
-| **-c**               | Returns items with their price                 |
-| **-k**               | To hide message while not including API key    |
-| **-h** or **--help** | Insturctions...                                |
+| Flag                 | Description                                   |
+| -------------------- | --------------------------------------------- |
+| **-items**           | Suggests only items                           |
+| **-heroes**          | Suggests only heroes                          |
+| **-utility**         | Suggests only utility heroes. (Default: Core) |
+| **-c**               | Returns items with their price                |
+| **-k**               | To hide message while not including API key   |
+| **-h** or **--help** | Insturctions...                               |
 
 ### **Usage**
 
