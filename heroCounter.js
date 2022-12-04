@@ -259,8 +259,6 @@ const heroCounter = () => {
             ? filtredAnswer
             : filtredAnswer.join("_");
 
-        let noData = false;
-
         if (
           (args.includes("-items") && args.includes("-heroes")) ||
           !args.includes("-items")
@@ -273,7 +271,6 @@ const heroCounter = () => {
 
           counterHeroes.then(data => {
             if (data.length === 0) {
-              noData = true;
               if (args.includes("-heroes") && !args.includes("-items")) {
                 console.log(
                   `${colors.bold.red(
