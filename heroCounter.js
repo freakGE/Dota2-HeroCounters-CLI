@@ -229,145 +229,156 @@ const fetchItems = () => {
   }
 };
 
-rl.question(
-  `${colors.green.bold(`Enter Hero Name`)}\n${colors.magenta.bold(">")} `,
-  answer => {
-    const ignoredWords = ["of", "the"];
-    let input;
-    let filtredAnswer;
-    if (answer.trim().includes("-")) {
-      input = answer.trim().split("-");
-      for (let i = 0; i < input.length; i++) {
-        input[i] = input[i][0].toUpperCase() + input[i].substr(1);
-      }
+const heroCounter = () => {
+  rl.question(
+    `${colors.green.bold(`Enter Hero Name`)}\n${colors.magenta.bold(">")} `,
+    answer => {
+      try {
+        const ignoredWords = ["of", "the"];
+        let input;
+        let filtredAnswer;
+        if (answer.trim().includes("-")) {
+          input = answer.trim().split("-");
+          for (let i = 0; i < input.length; i++) {
+            input[i] = input[i][0].toUpperCase() + input[i].substr(1);
+          }
 
-      filtredAnswer = input.join("-");
-    }
+          filtredAnswer = input.join("-");
+        }
 
-    if (filtredAnswer === undefined) filtredAnswer = answer.trim().split(" ");
+        if (filtredAnswer === undefined)
+          filtredAnswer = answer.trim().split(" ");
 
-    for (let i = 0; i < filtredAnswer.length; i++) {
-      if (!ignoredWords.includes(filtredAnswer[i]))
-        filtredAnswer[i] =
-          filtredAnswer[i][0].toUpperCase() + filtredAnswer[i].substr(1);
-    }
-    const hero =
-      typeof filtredAnswer === "string"
-        ? filtredAnswer
-        : filtredAnswer.join("_");
+        for (let i = 0; i < filtredAnswer.length; i++) {
+          if (!ignoredWords.includes(filtredAnswer[i]))
+            filtredAnswer[i] =
+              filtredAnswer[i][0].toUpperCase() + filtredAnswer[i].substr(1);
+        }
+        const hero =
+          typeof filtredAnswer === "string"
+            ? filtredAnswer
+            : filtredAnswer.join("_");
 
-    let noData = false;
+        let noData = false;
 
-    if (
-      (args.includes("-items") && args.includes("-heroes")) ||
-      !args.includes("-items")
-    ) {
-      const url = `https://dotapicker.com/herocounter#!/E_${hero}`;
+        if (
+          (args.includes("-items") && args.includes("-heroes")) ||
+          !args.includes("-items")
+        ) {
+          const url = `https://dotapicker.com/herocounter#!/E_${hero}`;
 
-      const counterHeroes = scrapeCounterHeroes(url, () => {
-        return args.includes("-utility") ? 1 : 0;
-      });
+          const counterHeroes = scrapeCounterHeroes(url, () => {
+            return args.includes("-utility") ? 1 : 0;
+          });
 
-      counterHeroes.then(data => {
-        if (data.length === 0) {
-          noData = true;
-          if (args.includes("-heroes") && !args.includes("-items")) {
+          counterHeroes.then(data => {
+            if (data.length === 0) {
+              noData = true;
+              if (args.includes("-heroes") && !args.includes("-items")) {
+                console.log(
+                  `${colors.bold.red(
+                    "There is currently no data about this hero."
+                  )}`
+                );
+                console.log(`${colors.bold.green("Outputs:")}`);
+                [`Hero: ${hero}`, url].map(item => {
+                  console.log(`${colors.bold.magenta("⚫")}${item}`);
+                });
+                process.exit();
+              }
+              return;
+            }
+
+            const table = new Table({
+              head: ["Rate", "Hero"],
+              style: {
+                head: ["green", "bold"],
+              },
+            });
+            data.map(hero => {
+              if (hero.rate <= 0) return;
+              table.push([
+                colors.magenta.bold(hero.rate),
+                colors.bold.cyan(hero.name),
+              ]);
+            });
+            console.log(table.toString());
+          });
+        }
+
+        if (args.includes("-heroes") && !args.includes("-items")) {
+          rl.close();
+          return;
+        }
+
+        const url = `https://dota2.fandom.com/wiki/${hero}/Counters`;
+        const counterItems = scrapeCounterItems(url);
+
+        counterItems.then(data => {
+          if (data.length === 0) {
             console.log(
               `${colors.bold.red(
                 "There is currently no data about this hero."
               )}`
             );
             console.log(`${colors.bold.green("Outputs:")}`);
-            [`Hero: ${hero}`, url].map(item => {
+
+            if (args.includes("-items") && !args.includes("-heroes")) {
+              [`Hero: ${hero}`, url].map(item => {
+                console.log(`${colors.bold.magenta("⚫")}${item}`);
+              });
+              process.exit();
+            }
+
+            [
+              `Hero: ${hero}`,
+              `https://dotapicker.com/herocounter#!/E_${hero}`,
+              url,
+            ].map(item => {
               console.log(`${colors.bold.magenta("⚫")}${item}`);
             });
             process.exit();
           }
-          return;
-        }
 
-        const table = new Table({
-          head: ["Rate", "Hero"],
-          style: {
-            head: ["green", "bold"],
-          },
-        });
-        data.map(hero => {
-          if (hero.rate <= 0) return;
-          table.push([
-            colors.magenta.bold(hero.rate),
-            colors.bold.cyan(hero.name),
-          ]);
-        });
-        console.log(table.toString());
-      });
-    }
+          const items = fetchItems();
 
-    if (args.includes("-heroes") && !args.includes("-items")) {
-      rl.close();
-      return;
-    }
+          data.map(counterItem => {
+            let counterItemText = counterItem;
 
-    const url = `https://dota2.fandom.com/wiki/${hero}/Counters`;
-    const counterItems = scrapeCounterItems(url);
-
-    counterItems.then(data => {
-      if (data.length === 0) {
-        console.log(
-          `${colors.bold.red("There is currently no data about this hero.")}`
-        );
-        console.log(`${colors.bold.green("Outputs:")}`);
-
-        if (args.includes("-items") && !args.includes("-heroes")) {
-          [`Hero: ${hero}`, url].map(item => {
-            console.log(`${colors.bold.magenta("⚫")}${item}`);
-          });
-          process.exit();
-        }
-
-        [
-          `Hero: ${hero}`,
-          `https://dotapicker.com/herocounter#!/E_${hero}`,
-          url,
-        ].map(item => {
-          console.log(`${colors.bold.magenta("⚫")}${item}`);
-        });
-        process.exit();
-      }
-
-      const items = fetchItems();
-
-      data.map(counterItem => {
-        let counterItemText = counterItem;
-
-        if (!items) {
-          console.log(`${colors.bold.magenta("⚫")}${counterItem}`);
-          return;
-        }
-
-        items.map(item => {
-          if (counterItem.includes(item.localized_name)) {
-            let itemName = item.localized_name;
-
-            if (args.includes("-c")) {
-              counterItemText = `${counterItemText.replace(
-                itemName,
-                `${colors.bold.blue(itemName)} ${colors.bold.yellow(
-                  `🟡${item.cost}`
-                )}`
-              )}`;
+            if (!items) {
+              console.log(`${colors.bold.magenta("⚫")}${counterItem}`);
               return;
             }
 
-            counterItemText = `${counterItemText.replace(
-              itemName,
-              `${colors.bold.blue(itemName)}`
-            )}`;
-          }
+            items.map(item => {
+              if (counterItem.includes(item.localized_name)) {
+                let itemName = item.localized_name;
+
+                if (args.includes("-c")) {
+                  counterItemText = `${counterItemText.replace(
+                    itemName,
+                    `${colors.bold.blue(itemName)} ${colors.bold.yellow(
+                      `🟡${item.cost}`
+                    )}`
+                  )}`;
+                  return;
+                }
+
+                counterItemText = `${counterItemText.replace(
+                  itemName,
+                  `${colors.bold.blue(itemName)}`
+                )}`;
+              }
+            });
+            console.log(`${colors.bold.magenta("⚫")}${counterItemText}`);
+          });
         });
-        console.log(`${colors.bold.magenta("⚫")}${counterItemText}`);
-      });
-    });
-    rl.close();
-  }
-);
+        rl.close();
+      } catch (err) {
+        heroCounter();
+      }
+    }
+  );
+};
+
+heroCounter();
