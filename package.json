@@ -1,8 +1,13 @@
 {
+  "name": "Dota2-HeroCounters-CLI",
+  "version": "1.0.0",
   "dependencies": {
-    "chalk": "4.1.0",
+    "@colors/colors": "^1.5.0",
+    "cli-table3": "^0.6.3",
     "dotenv": "^16.0.2",
     "puppeteer": "^17.0.0",
     "sync-fetch": "^0.4.1"
-  }
+  },
+  "license": "MIT",
+  "description": "Dota2 Hero Counters in CLI"
 }
