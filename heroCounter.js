@@ -20,7 +20,7 @@ require("dotenv").config();
 
 const args = process.argv.slice(2);
 
-if (args.includes("-h") || args.includes("-help")) {
+if (args.includes("-h") || args.includes("--help")) {
   const table = new Table({
     head: ["Flag", "Description"],
     style: {
