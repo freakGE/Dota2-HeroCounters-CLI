@@ -55,8 +55,8 @@ dota2-cli # To run script (Linux only)
 # **Usage**
 
 
-Inside parent dir
 ```sh
+# Inside parent dir
 cd Dota2-HeroCounters-CLI
 ```
 ### *node*
