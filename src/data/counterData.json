@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "Earth_Spirit": {
+      "counterHeroes": [
+        {
+          "name": "Juggernaut",
+          "rate": "3.1"
+        },
+        {
+          "name": "Sniper",
+          "rate": "3.1"
+        },
+        {
+          "name": "Shadow Fiend",
+          "rate": "3.1"
+        },
+        {
+          "name": "Phantom Assassin",
+          "rate": "3.1"
+        },
+        {
+          "name": "Windranger",
+          "rate": "3.1"
+        },
+        {
+          "name": "Puck",
+          "rate": "3.0"
+        },
+        {
+          "name": "Clinkz",
+          "rate": "2.9"
+        },
+        {
+          "name": "Morphling",
+          "rate": "2.6"
+        },
+        {
+          "name": "Wraith King",
+          "rate": "2.6"
+        },
+        {
+          "name": "Tiny",
+          "rate": "2.6"
+        },
+        {
+          "name": "Chaos Knight",
+          "rate": "2.4"
+        },
+        {
+          "name": "Drow Ranger",
+          "rate": "2.3"
+        },
+        {
+          "name": "Lina",
+          "rate": "2.2"
+        }
+      ],
+      "counterItems": [
+        "<a>Black King Bar</a> blocks all of Earth Spirit's abilities.",
+        "<a>Pipe of Insight</a> greatly reduces magical damage in a big area, making it hard for Earth Spirit to deal significant damage.",
+        "Items that can <a>dispel</a> debuffs:  <a>Eul's Scepter of Divinity</a>,  <a>Manta Style</a>,  <a>Guardian Greaves</a>,  <a>Lotus Orb</a>"
+      ],
+      "lastUpdated": {
+        "counterHeroes": "2024-10-05T17:17:02.400Z",
+        "counterItems": "2024-10-05T17:17:02.400Z"
+      }
+    }
+  }
+}
