@@ -1,11 +1,33 @@
 {
   "name": "Dota2-HeroCounters-CLI",
   "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node run.js"
+  },
+  "bin": {
+    "dota2-cli": "./bin/dota2-cli"
+  },
   "dependencies": {
     "@colors/colors": "^1.5.0",
     "cli-table3": "^0.6.3",
     "puppeteer": "^17.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freakGE/Dota2-HeroCounters-CLI.git"
+  },
+  "keywords": [
+    "dota2",
+    "cli",
+    "hero",
+    "counters"
+  ],
+  "author": "Sabunia",
+  "bugs": {
+    "url": "https://github.com/freakGE/Dota2-HeroCounters-CLI/issues"
+  },
+  "homepage": "https://github.com/freakGE/Dota2-HeroCounters-CLI#readme",
   "license": "MIT",
-  "description": "Dota2 Hero Counters in CLI"
+  "description": "Quick way to find effective hero counters for Dota 2 using CLI"
 }
