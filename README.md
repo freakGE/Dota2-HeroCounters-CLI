@@ -39,6 +39,7 @@ npm install
 | **-heroes**          | Suggests only heroes                          |
 | **-utility**         | Suggests only utility heroes. (Default: Core) |
 | **-sync**            | Forces data sync, refetching hero counters    |
+| **-custom**          | Custom set of flags                           |
 | **-h** or **--help** | Insturctions...                               |
 
 ### **Usage**
