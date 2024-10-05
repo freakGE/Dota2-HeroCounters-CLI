@@ -38,30 +38,13 @@ npm install
 | **-items**           | Suggests only items                           |
 | **-heroes**          | Suggests only heroes                          |
 | **-utility**         | Suggests only utility heroes. (Default: Core) |
-| **-c**               | Returns items with their price                |
-| **-k**               | To hide message while not including API key   |
+| **-sync**            | Forces data sync, refetching hero counters    |
 | **-h** or **--help** | Insturctions...                               |
 
 ### **Usage**
-
-To fully utilize the script's capabilities, obtain an [**STEAM API KEY**](https://steamcommunity.com/dev/apikey), open a terminal within **Dota2-HeroCounters-CLI**, create an **.env** file, and paste the key into the variable **STEAM_API_KEY**.
-
-```sh
-echo "STEAM_API_KEY=$YOUR_KEY" >> .env # w/o "$"
-```
-
-To run script
 
 ```sh
  node heroCounter.js # w/o any argument it will suggest both items and heroes
  node heroCounter.js -items # suggest only items
  node heroCounter.js -heroes -utility # only utility heroes
 ```
-
-In case u already write ur API key into **.env** file u can use flag **-c** which returns items with their own price.
-
-```sh
- node heroCounter.js -items -c
-```
-
-<div align="center"><img src="https://user-images.githubusercontent.com/52050303/203608667-c197019e-6bd7-4f86-8ae3-0171bf7b481d.png" /></div>
