@@ -15,6 +15,13 @@
     </div>
 </div>
 
+### **Features**
+* Saves fetched data locally for quicker subsequent access and offline use.
+* Supports custom flags like -items and -heroes for flexibility.
+* Cross-platform support (Windows, Linux, and macOS).
+* Easy-to-use CLI setup with automated dependency installation.
+* Provides a desktop shortcut for quick access (Windows only).
+
 ---
 
 ### **Prerequisites**
@@ -28,7 +35,10 @@
 # Open terminal
 git clone https://github.com/freakGE/Dota2-HeroCounters-CLI.git
 cd Dota2-HeroCounters-CLI
-npm install
+node setup.js
+
+dota2-cli # To run script (Linux only)
+# If you are using Windows, a shortcut named dota2-cli.lnk will be created on your desktop
 ```
 
 ### **Flags**
@@ -42,10 +52,30 @@ npm install
 | **-custom**          | Custom set of flags                           |
 | **-h** or **--help** | Insturctions...                               |
 
-### **Usage**
+# **Usage**
 
+
+Inside parent dir
 ```sh
- node heroCounter.js # w/o any argument it will suggest both items and heroes
- node heroCounter.js -items # suggest only items
- node heroCounter.js -heroes -utility # only utility heroes
+cd Dota2-HeroCounters-CLI
 ```
+### *node*
+```sh
+# node src/index.js [flags]
+node src/index.js # w/o any argument it will suggest both items and heroes
+node src/index.js -items # suggest only items
+```
+### *npm*
+```sh
+# npm start -- [flags]
+npm start -- -heroes -utility # only utility heroes
+```
+### *Shortcut*
+Open dota2-cli.lnk on your desktop
+```sh
+Enter flags (e.g., -items -heroes): -heroes -utility
+
+# You can run this from parent dir as well
+node run.js
+```
+
