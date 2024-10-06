@@ -16,8 +16,7 @@ rl.question('Enter flags (e.g., -items -heroes): ', (flags) => {
     console.log(`>> ${command}`);
 
     try {
-        const output = execSync(command, { stdio: 'inherit' });
-        console.log(`Command executed successfully.\nOutput:\n${output}`);
+        execSync(command, { stdio: 'inherit' });
     } catch (error) {
         console.error(`Error executing command: ${error.message}`);
     }
