@@ -1,4 +1,26 @@
 const colors = require("@colors/colors");
+let fetch;
+(async () => {
+  fetch = (await import('node-fetch')).default;
+})();
+
+const API_URL = "https://www.dota2.com/datafeed/herolist?language=english";
+
+const fetchHeroList = async () => {
+    try {
+      const response = await fetch(API_URL);
+      const data = await response.json();
+      if (data?.result?.data?.heroes) {
+        const heroNames = data.result.data.heroes.map(hero => hero.name_loc);
+        return heroNames;
+      } else {
+        throw new Error("Could not fetch hero data from API");
+      }
+    } catch (error) {
+      console.error("Error fetching hero list:", error);
+      return [];
+    }
+  };
 
 const displayHelpInstructions = () => {
     const Table = require("cli-table3");
@@ -80,6 +102,7 @@ const formatHeroOutput = (hero) => {
 };
 
 module.exports = {
+    fetchHeroList,
     displayHelpInstructions,
     handleError,
     formatItemOutput,

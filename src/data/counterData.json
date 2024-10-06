@@ -61,8 +61,1054 @@
         "Items that can <a>dispel</a> debuffs:  <a>Eul's Scepter of Divinity</a>,  <a>Manta Style</a>,  <a>Guardian Greaves</a>,  <a>Lotus Orb</a>"
       ],
       "lastUpdated": {
-        "counterHeroes": "2024-10-05T17:17:02.400Z",
-        "counterItems": "2024-10-05T17:17:02.400Z"
+        "counterHeroes": "2024-10-06T16:21:09.540Z",
+        "counterItems": "2024-10-06T16:21:09.540Z"
+      }
+    },
+    "Axe": {
+      "counterHeroes": [
+        {
+          "name": "Timbersaw",
+          "rate": "3.1"
+        },
+        {
+          "name": "Slardar",
+          "rate": "3.1"
+        },
+        {
+          "name": "Dawnbreaker",
+          "rate": "3.1"
+        },
+        {
+          "name": "Pangolier",
+          "rate": "3.1"
+        },
+        {
+          "name": "Hoodwink",
+          "rate": "3.1"
+        },
+        {
+          "name": "Bloodseeker",
+          "rate": "3.1"
+        },
+        {
+          "name": "Terrorblade",
+          "rate": "3.1"
+        },
+        {
+          "name": "Lina",
+          "rate": "3.1"
+        },
+        {
+          "name": "Spectre",
+          "rate": "3.0"
+        },
+        {
+          "name": "Puck",
+          "rate": "2.6"
+        },
+        {
+          "name": "Death Prophet",
+          "rate": "2.6"
+        },
+        {
+          "name": "Alchemist",
+          "rate": "2.5"
+        },
+        {
+          "name": "Spirit Breaker",
+          "rate": "2.5"
+        },
+        {
+          "name": "Sven",
+          "rate": "2.5"
+        },
+        {
+          "name": "Centaur Warrunner",
+          "rate": "2.3"
+        },
+        {
+          "name": "Kunkka",
+          "rate": "2.2"
+        },
+        {
+          "name": "Shadow Fiend",
+          "rate": "2.2"
+        },
+        {
+          "name": "Lifestealer",
+          "rate": "2.1"
+        },
+        {
+          "name": "Magnus",
+          "rate": "2.1"
+        },
+        {
+          "name": "Mirana",
+          "rate": "2.1"
+        }
+      ],
+      "counterItems": [
+        "<a>Eul's Scepter of Divinity</a> wastes the duration of Berserker's Call when used on Axe (or allies, when upgraded into  <a>Wind Waker</a>).",
+        "<a>Vladmir's Offering</a> and  <a>Satanic</a>'s lifesteal makes it harder for Axe to kill enemies with  <a>Culling Blade</a>.",
+        "<a>Force Staff</a> can help dodge a Berserker's Call, or push an ally out of its radius.",
+        "<a>Silver Edge</a> <a>breaks</a> Counter Helix.",
+        "<a>Mekansm</a> keeps allies' health above Culling Blade's threshold, and can be used at the last moment to bait Axe into an overly long initiation.",
+        "<a>Ethereal Blade</a> can be used on an Axe to prevent any allied unit from attacking him.",
+        "<a>Spirit Vessel</a> can be used on Axe to reduce his health regen.",
+        "<a>Eye of Skadi</a> can reduce axe's high health regen gain from the heart of tarrasque and his natural high strength",
+        "<a>Lotus Orb</a> can be dispelled and reflects Battle Hunger.Additionaly, <a>Lotus Orb</a> passes Battle Hunger activated, affects from Battle Hunger can reflects back to Axe and can not use  <a>Blink Dagger</a> cooldown."
+      ],
+      "lastUpdated": {
+        "counterHeroes": "2024-10-06T15:43:56.484Z",
+        "counterItems": "2024-10-06T16:15:16.806Z"
+      }
+    },
+    "Anti-Mage": {
+      "counterHeroes": [
+        {
+          "name": "Huskar",
+          "rate": "3.1"
+        },
+        {
+          "name": "Chaos Knight",
+          "rate": "3.1"
+        },
+        {
+          "name": "Lone Druid",
+          "rate": "3.0"
+        },
+        {
+          "name": "Razor",
+          "rate": "3.0"
+        },
+        {
+          "name": "Kunkka",
+          "rate": "2.9"
+        },
+        {
+          "name": "Legion Commander",
+          "rate": "2.9"
+        },
+        {
+          "name": "Naga Siren",
+          "rate": "2.8"
+        },
+        {
+          "name": "Sniper",
+          "rate": "2.8"
+        },
+        {
+          "name": "Storm Spirit",
+          "rate": "2.5"
+        },
+        {
+          "name": "Bristleback",
+          "rate": "2.5"
+        },
+        {
+          "name": "Windranger",
+          "rate": "2.5"
+        },
+        {
+          "name": "Centaur Warrunner",
+          "rate": "2.2"
+        },
+        {
+          "name": "Necrophos",
+          "rate": "2.2"
+        },
+        {
+          "name": "Bloodseeker",
+          "rate": "2.2"
+        },
+        {
+          "name": "Viper",
+          "rate": "2.1"
+        }
+      ],
+      "counterItems": [
+        "<a>Aeon Disk</a> is a great item for supports who wish to survive Anti-Mage's initiation with  <a>Abyssal Blade</a> and  Mana Void.",
+        "<a>Black King Bar</a> protects its owners against Mana Break and Mana Void.",
+        "<a>Linken's Sphere</a> blocks Mana Void, and can be used on vulnerable teammates.",
+        "<a>Arcane Boots</a> and  <a>Guardian Greaves</a> keep the team's mana high, reducing the damage from Mana Void.",
+        "<a>Scythe of Vyse</a> prevents Anti-Mage from Blinking away. And hex cannot be dispelled with Manta Style at all.",
+        "<a>Butterfly</a> gives evasion against Mana Break.",
+        "<a>Orchid Malevolence</a> prevents Anti-Mage from Blinking away.",
+        "<a>Diffusal Blade</a> Drain's Anti Mage mana preventing him from blinking away",
+        "<a>Silver Edge</a> <a>breaks</a> Mana Break and Counterspell's magic resistance, making Anti-Mage weak even against heroes he naturally counters."
+      ],
+      "lastUpdated": {
+        "counterHeroes": "2024-10-06T15:47:02.140Z",
+        "counterItems": "2024-10-06T15:47:02.140Z"
+      }
+    },
+    "Legion_Commander": {
+      "counterHeroes": [],
+      "counterItems": [
+        "<a>Ghost Scepter</a> stops Legion Commander from attacking during Duels, but has to be used beforehand and doesn't last as long as the Duel itself.",
+        "<a>Ethereal Blade</a> stops Legion Commander from attacking during Duels but just like Ghost Scepter, doesn't last as long as the duel.",
+        "<a>Heaven's Halberd</a> stops Legion Commander from attacking during Duels, and gives its owner <a>evasion</a> even after the active ability ends.",
+        "<a>Eul's Scepter of Divinity</a> interrupts Duels and dispels the buffs from Press the Attack and Overwhelming Odds.",
+        "<a>Linken's Sphere</a> prevents Legion Commander from initiating Duels. This negates her ability to gank targets by herself, forcing her to stick with her allies.",
+        "<a>Solar Crest</a>'s buff protects both its owner and their allies from being killed in Duels. It can also be used on Legion Commander to give an allied opponent an advantage.",
+        "<a>Blade Mail</a> can cause Legion Commander to take more damage than her target, especially if she has won many previous Duels.",
+        "<a>Mekansm</a> makes it harder for Legion Commander to kill an allied opponent.",
+        "<a>Aeon Disk</a> stops Legion Commander from killing opponents during Duels.",
+        "<a>Satanic</a> provides lifesteal and its active help its carriers to survive or can even help the carriers to win Duels, if timed correctly."
+      ],
+      "lastUpdated": {
+        "counterHeroes": null,
+        "counterItems": "2024-10-06T14:41:20.730Z"
+      }
+    },
+    "Medusa": {
+      "counterHeroes": [],
+      "counterItems": [
+        "<a>Diffusal Blade</a>, and it's upgrade  <a>Disperser</a> can burn away the mana Medusa needs for Mana Shield, and its active ability can slow Medusa down. These items can make Medusa weak even against heroes she naturally counters.",
+        "<a>Blade Mail</a> activation for a disengage can discourage Medusa from using any auto attacks or Mystic Snake cast.",
+        "<a>Heaven's Halberd</a> can disarm Medusa for a long 5 seconds, and disarm cannot be dispelled with Manta Style.",
+        "<a>Abyssal Blade</a> repeatedly stuns Medusa with Overwhelm and Bash even if Medusa is spell immune, and her poor mobility means she cannot easily escape an <a>Abyssal Blade</a> user.",
+        "<a>Spirit Vessel</a> reduces her healing and lifesteal effects, and also eats away her mana pool slowly and can sustain the effects if it has stacks.",
+        "<a>Ghost Scepter</a> and it's upgrade  <a><a>Ethereal Blade</a></a> can be used to defend yourself or your allies against Medusa's mostly-physical damage output.  <a><a>Ethereal Blade</a></a> can also be used to disarm Medusa and make her more vulnerable to magical damage. And besides Mystic Snake, Medusa has no other ways of dealing magical damage.",
+        "<a>Solar Crest</a> removes a huge chunk of armor and adds an attack speed debuff. Slows her damage output and movement in team fights allows her to get focused also weakens her durability.",
+        "<a>Lotus Orb</a> will reflect Mystic Snake back at Medusa, damaging Medusa and stealing her mana if she uses Mystic Snake on the enemy hero protected by it."
+      ],
+      "lastUpdated": {
+        "counterHeroes": null,
+        "counterItems": "2024-10-06T08:49:07.971Z"
+      }
+    },
+    "Morphling": {
+      "counterHeroes": [
+        {
+          "name": "Sven",
+          "rate": "3.1"
+        },
+        {
+          "name": "Huskar",
+          "rate": "3.1"
+        },
+        {
+          "name": "Lycan",
+          "rate": "3.1"
+        },
+        {
+          "name": "Riki",
+          "rate": "3.1"
+        },
+        {
+          "name": "Troll Warlord",
+          "rate": "3.1"
+        },
+        {
+          "name": "Lifestealer",
+          "rate": "3.1"
+        },
+        {
+          "name": "Zeus",
+          "rate": "3.0"
+        },
+        {
+          "name": "Ursa",
+          "rate": "2.9"
+        },
+        {
+          "name": "Lone Druid",
+          "rate": "2.9"
+        },
+        {
+          "name": "Naga Siren",
+          "rate": "2.8"
+        },
+        {
+          "name": "Arc Warden",
+          "rate": "2.8"
+        },
+        {
+          "name": "Phantom Lancer",
+          "rate": "2.6"
+        },
+        {
+          "name": "Alchemist",
+          "rate": "2.6"
+        },
+        {
+          "name": "Slark",
+          "rate": "2.4"
+        },
+        {
+          "name": "Tinker",
+          "rate": "2.2"
+        },
+        {
+          "name": "Queen of Pain",
+          "rate": "2.1"
+        },
+        {
+          "name": "Sniper",
+          "rate": "2.1"
+        }
+      ],
+      "counterItems": [
+        "<a>Monkey King Bar</a> - As Morphling rarely builds any sort of magic resistance aside from  <a>Black King Bar</a>, which <a>Monkey King Bar</a> pierces, the high magic damage from its Pierce passive is more effective than most physical damage items.",
+        "<a>Orchid Malevolence</a> and  <a>Bloodthorn</a> - Both items can silence Morphling, preventing him from using his abilities to survive and/or escape. The latter also amplifies physical damage Morphling takes, and provides True Strike if Morphling has  <a>Butterfly</a>. However, Morphling can easily counter this issue with  <a>Manta Style</a>, a common item on Morphling.",
+        "<a>Heaven's Halberd</a> places an undispellable disarm on Morphling, forcing him to resort to his nukes to deal damage.",
+        "<a>Spirit Vessel</a> reduces the health Morphling gains using Attribute Shift (Strength) by 60%.",
+        "<a>Scythe of Vyse</a> fully disables Morphling and allows the enemy team to burst him down. And hex cannot be dispelled with  <a>Manta Style</a>.",
+        "<a>Revenant's Brooch</a> allows heroes reliant on right-clicks to have their next five attacks deal magical damage that can bypass Morphling's high armor from  <a>Adaptive Strike (Agility)</a> when activated, which can make Morphling weak even against heroes he naturally counters.",
+        "<a>Blink Dagger</a> allows heroes with stun abilities to close gaps and disable Morphling before he can shift into strength:  <a>Axe</a>,  <a>Earthshaker</a>,  <a>Legion Commander</a>,  <a>Lion</a>,  <a>Outworld Destroyer</a>,  <a>Shadow Shaman</a>,  <a>Slardar</a>.",
+        "<a>Lotus Orb</a> can reflect both  <a>Adaptive Strike (Strength)</a> and  <a>Adaptive Strike (Agility)</a> back at Morphling if he uses them impulsively on a hero protected by it."
+      ],
+      "lastUpdated": {
+        "counterHeroes": "2024-10-06T15:43:56.484Z",
+        "counterItems": "2024-10-06T16:15:16.806Z"
+      }
+    },
+    "Outworld_Destroyer": {
+      "counterHeroes": [],
+      "counterItems": [
+        "Instant healing items, such as  <a>Mekansm</a>,  <a>Magic Stick</a>, and  <a>Faerie Fire</a>, can be used inside Astral Imprisonment and the healing will take effect before the damage from the prison, potentially saving the target.",
+        "<a>Pipe of Insight</a> significantly reduces Sanity's Eclipse's damage.",
+        "<a>Black King Bar</a> makes the user immune to all of Outworld Destroyer's spells.",
+        "When using  <a>Helm of the Dominator</a>, an  <a>Ogre Frostmage</a>'s  <a>Ice Armor</a> decreases Outworld Destroyer's attack speed, making it hard for him to build charges and deal damage with Arcane Orb.",
+        "<a>Lotus Orb</a> reflects Astral Imprisonment back to Outworld Destroyer and imprisons both heroes at once. Their intelligence won't change much as both affected heroes will lose and regain the same amount when the imprisonment ends."
+      ],
+      "lastUpdated": {
+        "counterHeroes": null,
+        "counterItems": "2024-10-06T10:13:28.622Z"
+      }
+    },
+    "Io": {
+      "counterHeroes": [
+        {
+          "name": "Bristleback",
+          "rate": "3.1"
+        },
+        {
+          "name": "Wraith King",
+          "rate": "3.1"
+        },
+        {
+          "name": "Lycan",
+          "rate": "3.1"
+        },
+        {
+          "name": "Drow Ranger",
+          "rate": "3.1"
+        },
+        {
+          "name": "Faceless Void",
+          "rate": "3.1"
+        },
+        {
+          "name": "Phantom Assassin",
+          "rate": "3.1"
+        },
+        {
+          "name": "Queen of Pain",
+          "rate": "3.1"
+        },
+        {
+          "name": "Sven",
+          "rate": "3.1"
+        },
+        {
+          "name": "Spectre",
+          "rate": "3.0"
+        },
+        {
+          "name": "Naga Siren",
+          "rate": "2.9"
+        },
+        {
+          "name": "Doom",
+          "rate": "2.3"
+        },
+        {
+          "name": "Dragon Knight",
+          "rate": "2.3"
+        }
+      ],
+      "counterItems": [
+        "<a><a>Radiance</a></a> and  <a><a>Dagon</a></a> combined with  <a><a>Ethereal Blade</a></a>,  <a><a><a>Veil of Discord</a></a></a> and  <a><a><a>Revenant's Brooch</a></a></a> can take out Io quickly in teamfights or any of his teammates before he even gets a chance to save them. In addition, they are all good against Io in their own way:  <a><a>Radiance</a></a> can deal damage-over-time to both, Io and it's tethered target while also causing them to miss attacks, reducing the effectiveness of Overcharge.  <a><a>Dagon</a></a> can burst down either Io or any of his teammates before he can save them.  <a><a>Ethereal Blade</a></a> can be used to disarm either Io or his tethered target and make them more vulnerable to magic damage, diminishing effects of the Overcharge in process.  <a><a><a>Veil of Discord</a></a></a> can make both, Io and it's tethered target more vulnerable to spell damage,  <a><a><a>Veil of Discord</a></a></a> can later be upgraded into  <a>Shiva's Guard</a> which can also reduce Io's healing and reduce attack speed from Overcharge.  <a><a><a>Revenant's Brooch</a></a></a>'s active ability allows it's owner's attacks to deal magic damage that can weaken either Io's or it's tethered target's magic resistance by 20%, and to make things worse,  <a><a><a>Revenant's Brooch</a></a></a>'s active ability allows it's owner to attack ethereal units, making  <a>Ghost Scepter</a>, one of the items Io relies on to survive against heroes reliant on direct attacks, useless and detrimental for Io.",
+        "<a>Blink Dagger</a> and it's upgrades:  <a>Overwhelming Blink</a>,  <a>Swift Blink</a> and  <a>Arcane Blink</a> allows heroes to jump on Io for quick kill.",
+        "<a><a>Spirit Vessel</a></a> and  <a><a>Shiva's Guard</a></a> are very good items against Io:  <a><a>Spirit Vessel</a></a> can heavily reduce any healing Io tries to provide to the Tethered target while  <a><a>Shiva's Guard</a></a> can not just reduce any healing Io tries to provide to the Tethered target, but can also greatly reduce attack speed from Overcharge and make him more vulnerable to magical damage. Making Io weak even against heroes he naturally counters.",
+        "<a>Black King Bar</a> will render Io unable to damage enemy heroes who wield it at all.",
+        "<a>Rod of Atos</a> shuts down Io's mobility and can be used to cancel Relocate. Later it can be upgraded into  <a>Gleipnir</a>, to shut down mobility of both, Io and it's tethered target and cancel Relocate while also passively providing a chance to release a chain lightning that can damage, both Io and it's tethered target.",
+        "<a>Orchid Malevolence</a>, it's upgrade  <a>Bloodthorn</a> and  <a>Scythe of Vyse</a> will render Io absolutely powerless if Io is not protected by any form of Spell Immunity."
+      ],
+      "lastUpdated": {
+        "counterHeroes": "2024-10-06T16:21:09.540Z",
+        "counterItems": "2024-10-06T16:21:09.540Z"
+      }
+    },
+    "Kunkka": {
+      "counterHeroes": [],
+      "counterItems": [
+        "<a>Crimson Guard</a> will protect against much of Kunkka's damage early on.",
+        "<a>Black King Bar</a> negates all of Kunkka's spell damage, and negates X Marks the Spot.",
+        "<a>Eul's Scepter of Divinity</a> negates X Marks the Spot both on allies and enemies, if timed correctly.",
+        "<a>Lotus Orb</a> creates two marks: one for his target, another for Kunkka himself. If Kunkka casts this spell again, target will be returned back at X's positionm, but Kunkka won't. Lasts 4 seconds for both Kunkka and target."
+      ],
+      "lastUpdated": {
+        "counterHeroes": null,
+        "counterItems": "2024-10-06T13:14:29.203Z"
+      }
+    },
+    "Huskar": {
+      "counterHeroes": [],
+      "counterItems": [
+        "<a>Black King Bar</a> negates the magical damage from Burning Spears and Inner Fire unless the level 25 talent for Burning Spears is chosen.",
+        "<a>Pipe of Insight</a> will both reduce and/or block the damage dealt by Burning Spears and Life Break, which greatly reduces Huskar's damage output.",
+        "<a>Silver Edge</a> will <a>break</a> Berserker's Blood, making it much easier to burst down Huskar while also reducing his damage.",
+        "<a>Heaven's Halberd</a> stops Huskar from attacking and applying Burning Spears.",
+        "<a>Linken's Sphere</a> blocks Life Break.",
+        "<a>Spirit Vessel</a> disables most of Berserker's Blood health regeneration.",
+        "<a>Manta Style</a> can dodge Life Break's damage if timed correctly. Huskar isn't great at dealing with illusions as well.",
+        "<a>Shiva's Guard</a> applies <a>health regen reduction</a> and <a>lifesteal reduction</a>.",
+        "<a>Eye of Skadi</a> can reduce the health regeneration and lifesteal of Huskar. It can also slightly reduce the attack speed of Huskar."
+      ],
+      "lastUpdated": {
+        "counterHeroes": null,
+        "counterItems": "2024-10-06T13:14:29.203Z"
+      }
+    },
+    "Slardar": {
+      "counterHeroes": [],
+      "counterItems": [
+        "Given that Slardar's damage output is entirely physical, there is almost nothing he can do when enemies activate  <a>Ghost Scepter</a>.",
+        "<a>Shiva's Guard</a> provides armor which helps against Slardar, while the passive attack slow also prevents him from attacking as often.",
+        "<a>Radiance</a>,  <a>Butterfly</a>,  <a>Heaven's Halberd</a>,  <a>Solar Crest</a> can reduce the value of your Corrosive Haze with constant misses and can be hard for Slardar to itemize against, requiring  <a>Black King Bar</a>,  <a>Monkey King Bar</a> or both. The same applies for his allies that want to take advantage of the <a>armor</a> reduction.",
+        "<a>Diffusal Blade</a> can be a pain to deal with until Slardar gets a  <a>Black King Bar</a>.",
+        "<a>Lotus Orb</a> dispels and reflects Corrosive Haze back at Slardar if he tries to use it on a hero affected by it."
+      ],
+      "lastUpdated": {
+        "counterHeroes": null,
+        "counterItems": "2024-10-06T14:10:32.896Z"
+      }
+    },
+    "Underlord": {
+      "counterHeroes": [],
+      "counterItems": [
+        "<a>Force Staff</a> will push enemies out of Firestorm, Pit of Malice, and Atrophy Aura's range. It can even push Underlord's teammates away from him before Fiend's Gate's teleport goes off. Later it can be upgraded into  <a>Hurricane Pike</a> which will allow ranged heroes who rely on direct attacks to damage Underlord without getting in range of Atrophy Aura.",
+        "<a>Diffusal Blade</a> and it's upgrade  <a>Disperser</a> punish Underlord for his low mana, and its active reduces his mobility further.",
+        "<a>Shiva's Guard</a> can be used to catch Underlord's team off guard when they gather for Fiend's Gate, and can be used to deal damage if caught in his Pit of Malice while also amplifying damage Underlord will take from spells and reducing his attack speed and any heals he receives.",
+        "<a>Dagon</a>'s high magical damage burst will not be weakened by Atrophy Aura at all.",
+        "<a>Gleipnir</a> can be used to root Underlord and his team when they gather for Fiend's Gate.",
+        "<a>Pipe of Insight</a>,  <a>Glimmer Cape</a>,  <a>Mage Slayer</a> and  <a>Eternal Shroud</a> will negate pretty much all of Underlord's magical damage.",
+        "<a>Boots of Travel 2</a> can be used to defend or counter push after Underlord uses Fiend's Gate.",
+        "<a>Ghost Scepter</a> can be a useful defense tool against Underlord if he has lots of stacks from Atrophy Aura and if he is played as Carry. Later it can be upgraded into  <a>Ethereal Blade</a> that can be used to disarm Underlord and make him more vulnerable to magic damage while also increasing cast range, allowing it's owners to fight against Underlord without getting in range of Atrophy Aura. But bear in mind that entering ethereal state will amplify Underlord's magical damage.",
+        "<a>Black King Bar</a> will make Underlord think twice before engaging the hero affected by it as Underlord has nothing to counter debuff immunity.",
+        "<a><a>Silver Edge</a></a> can disable Underlord's Atrophy Aura, weakening both, his offense and defense. However,  <a><a>Silver Edge</a></a> cannot be used to escape from Pit of Malice whose root can reveal invisible heroes.",
+        "<a><a>Manta Style</a></a> can be used to dispel root from Pit of Malice. However,  <a><a>Manta Style</a></a>'s illusions can still be easily cleared with Firestorm."
+      ],
+      "lastUpdated": {
+        "counterHeroes": null,
+        "counterItems": "2024-10-06T14:45:09.106Z"
+      }
+    },
+    "Ancient_Apparition": {
+      "counterHeroes": [],
+      "counterItems": [
+        "<a>Cloak</a>,  <a>Glimmer Cape</a>  <a>Pipe of Insight</a> can reduce damage from all of Ancient Apparition's abilities.",
+        "<a>Black King Bar</a> dispels Cold Feet and prevents damage from Ancient Apparition's abilities, with the exception of Ice Blast.",
+        "<a>Force Staff</a> and it's upgrade  <a>Hurricane Pike</a> can be used to escape Ancient Apparition's abilities.",
+        "<a>Shadow Blade</a> and it's upgrade  <a>Silver Edge</a> makes it hard to for Ancient Apparition to hit enemy heroes with Ice Blast.",
+        "<a>Manta Style</a> and  <a>Eul's Scepter of Divinity</a> can dispel the Cold Feet debuff.",
+        "<a>Lotus Orb</a> can dispel Cold Feet and can also reflect it back at Ancient Apparition if he impulsively uses it on a hero affected by it."
+      ],
+      "lastUpdated": {
+        "counterHeroes": null,
+        "counterItems": "2024-10-06T14:45:09.106Z"
+      }
+    },
+    "Arc_Warden": {
+      "counterHeroes": [],
+      "counterItems": [
+        "<a>Black King Bar</a> negates Arc Warden's mostly magical damage and it also prevents him from using items on it's owners.",
+        "<a>Lotus Orb</a> can reflect Flux back at Arc Warden and will usually reflect most of Arc Warden's frequently built items back onto him.",
+        "<a>Monkey King Bar</a>,  <a>Witch Blade</a> and  <a>Revenant's Brooch</a> allow enemies to attack Arc Warden through Magnetic Field.",
+        "<a>Manta Style</a> can dispel Flux, frequently bought  <a>Gleipnir</a> and makes Spark Wraith much less effective."
+      ],
+      "lastUpdated": {
+        "counterHeroes": null,
+        "counterItems": "2024-10-06T14:47:31.592Z"
+      }
+    },
+    "Templar_Assassin": {
+      "counterHeroes": [],
+      "counterItems": [
+        "<a>Radiance</a> and  <a>Urn of Shadows</a> (as well as  <a>Spirit Vessel</a>) can waste Templar Assassin's Refraction charges and keep burning her down during Meld. In addition, these items can also prevent Templar Assassin to escape with her  <a>Blink Dagger</a>.",
+        "<a>Revenant's Brooch</a> damage over time can also be a problem for Templar Assassin, easily burning her Refraction instances quickly.",
+        "Items that grant True Sight:  <a>Dust of Appearance</a> (she can dispel it with her talent),  <a>Gem of True Sight</a>,  <a>Sentry Ward</a>,  <a>Book of the Dead</a>.",
+        "Items that can waste her ganking attempt:  <a>Ghost Scepter</a> is a very good choice against her since she relies almost entirely on physical damage, also <a>Ghost Scepter</a> and  <a>Eul's Scepter of Divinity</a> can buy you precious time to TP away since she has no hard disable to pin her victim down.  <a>Force Staff</a> can make some distance with her, but unless you are able to force onto high ground, her Psionic Trap will help her catch up easily."
+      ],
+      "lastUpdated": {
+        "counterHeroes": null,
+        "counterItems": "2024-10-06T14:47:31.592Z"
+      }
+    },
+    "Phantom_Lancer": {
+      "counterHeroes": [],
+      "counterItems": [
+        "Both  <a>Aeon Disk</a> and  <a>Crimson Guard</a> will completely negate the damage of Phantom Lancer's illusions, even when Phantom Lancer has a considerable farm.",
+        "<a>Battle Fury</a>'s cleave damage helps destroy Phantom Lancer's illusions.",
+        "<a>Heaven's Halberd</a> prevents Phantom Lancer from proccing Juxtapose places an undispellable debuff which helps identify the real Phantom Lancer.",
+        "<a>Radiance</a>'s burn aura helps destroy Phantom Lancer's illusions, and its blind chance provides some protection from his right clicks.",
+        "<a>Silver Edge</a> <a>breaks</a> Juxtapose and Phantom Rush and places undispellable debuff which helps identify the real Phantom Lancer.",
+        "<a>Maelstrom</a> and  <a>Mjollnir</a>'s chain lightning helps clear Phantom Lancer's illusions.",
+        "<a>Orchid Malevolence</a> and  <a>Bloodthorn</a> indirectly locks down Phantom Lancer by preventing him from using Doppelganger to disjoint or dispel.",
+        "<a>Shiva's Guard</a> helps clear out Phantom Lancer's illusions. The passive aura and active slow reduce Phantom Lancer's attack speed and regeneration.",
+        "<a>Magic Wand</a> helps his victims get off an escape ability.",
+        "<a>Nullifier</a> reveals the real hero as it is not dispellable and negates the safety of his many illusions, so the enemy can focus him down.",
+        "<a>Gleipnir</a>'s AoE <a>root</a> prevents Phantom Lancer and his illusions from using Doppelganger.",
+        "<a>Lotus Orb</a> can reflects Spirit Lance and illusions from Spirit Lance target back to Phantom Lancer's"
+      ],
+      "lastUpdated": {
+        "counterHeroes": null,
+        "counterItems": "2024-10-06T14:47:31.592Z"
+      }
+    },
+    "Phantom_Assassin": {
+      "counterHeroes": [],
+      "counterItems": [
+        "<a>Monkey King Bar</a> grants accuracy to counter  <a>Blur</a>.",
+        "<a>Witch Blade</a> and its upgrade  <a><a>Parasma</a></a> can deal damage over time to Phantom Assassin every 9 seconds, and attacks from both items have True Strike.  <a><a>Parasma</a></a> can also weaken Phantom Assassin's magic resistance by 20% for 3 seconds, rendering her more vulnerable to abilities that deal magical damage.",
+        "<a>Revenant's Brooch</a>'s attacks can damage Phantom Assassin even while she has  <a><a>Black King Bar</a></a> active, though it's damage output will be reduced for  <a><a>Black King Bar</a></a>'s duration.",
+        "<a>Maelstrom</a>'s,  <a>Gleipnir</a>'s and  <a>Mjollnir</a>'s Chain Lightning can pierce through  <a>Blur</a>.",
+        "<a>Blade Mail</a> turns Phantom Assassin's massive burst damage against her, discouraging her from attacking.",
+        "<a>Bloodthorn</a> makes her a more vulnerable target thanks to its ability to make every attack have true strike, damage amplification, and critical strikes. In addition, the silence prevents her from initiating effectively, being unable to use her  <a>Stifling Dagger</a> and  <a>Phantom Strike</a>, making her susceptible to kiting.",
+        "<a>Scythe of Vyse</a> completely removes Phantom Assassin's chances of escape. As Hex also disables item usage, even if she purchases  <a>Black King Bar</a>, if the Hex is applied before she can activate it, she may fall down very easily once further disabled and nuked down before she even gets a chance to retaliate.",
+        "<a>Nullifier</a> can be used to dispel  <a>Phantom Strike</a>'s attack speed buff from Phantom Assassin, and to continuously dispel Phantom Assassin even if she is spell immune.",
+        "<a><a>Abyssal Blade</a></a> makes Phantom Assassin a very easy target to disable if she uses  <a>Phantom Strike</a> on a hero who wields it. And to make thins worse,  <a><a>Abyssal Blade</a></a> can disable Phantom Assassin even if she is spell immune.",
+        "<a>Butterfly</a> provides evasion against Phantom Assassin's direct attacks, minimalizing chances for her to inflict damage on it's owner with  <a>Coup de Grace</a>. Additionally, Phantom Assassin doesn't like building  <a>Monkey King Bar</a> because her crits are reliant on attack damage.",
+        "<a>Silver Edge</a>'s <a>breaks</a>  <a>Blur</a> and  <a>Coup de Grace</a>, severely crippling her damage and survivability while also making her weak even against heroes she naturally counters.",
+        "<a>Gleipnir</a> can be used to root Phantom Assassin, preventing her from using  <a>Phantom Strike</a> while also providing a passive chance to have it's owner's attacks release a Chain Lightning that can pierce through  <a>Blur</a>.",
+        "<a>Ghost Scepter</a> prevents Phantom Assassin from attacking, making it a good protection item for casters. It can be upgraded to  <a><a>Ethereal</a> Blade</a> later, which can be used on allies or to nuke and disarm Phantom Assassin. In addition, Phantom Assassin hates to buy  <a><a>Revenant's Brooch</a></a>, which is one of the two items (other being  <a>Nullifier</a>) that helps her deal with <a>Ethereal</a> state or buying items that let her deal magical damage like  <a><a>Revenant's Brooch</a></a>,  <a>Dagon</a> and  <a><a>Ethereal</a> Blade</a>.",
+        "<a>Glimmer Cape</a> can be used to save targets hit by Phantom Assassin's crits. However, it is not advised if your team already has invisible heroes as enemies will then most likely carry  <a>Dust of Appearance</a> all the time.",
+        "<a>Solar Crest</a> not only melts Phantom Assassin's armor, it also reduces her attack speed from  <a>Phantom Strike</a>.",
+        "<a>Heaven's Halberd</a> disarms Phantom Assassin, preventing her from proccing  <a>Coup de Grace</a>. Its evasion also provides reliable protection against her physical attacks.",
+        "<a>Lotus Orb</a> will reflect  <a>Stifling Dagger</a> back at Phantom Assassin, discouraging her from harassing an enemy hero protected by it."
+      ],
+      "lastUpdated": {
+        "counterHeroes": null,
+        "counterItems": "2024-10-06T14:47:31.592Z"
+      }
+    },
+    "Void_Spirit": {
+      "counterHeroes": [],
+      "counterItems": [
+        "<a>Orchid Malevolence</a> and  <a>Bloodthorn</a> shut down Void Spirit completely with the <a>silence</a>.",
+        "<a>Hood of Defiance</a> and  <a>Pipe of Insight</a> will help reduce Void Spirit's burst damage.",
+        "<a>Black King Bar</a> is a good defence item against Void Spirit's magical damage output. And outside of Astral Step, none of Void Spirit's of his spells can pierce debuff spell immunity."
+      ],
+      "lastUpdated": {
+        "counterHeroes": null,
+        "counterItems": "2024-10-06T14:53:11.185Z"
+      }
+    },
+    "Earthshaker": {
+      "counterHeroes": [
+        {
+          "name": "Mirana",
+          "rate": "3.1"
+        },
+        {
+          "name": "Gyrocopter",
+          "rate": "3.1"
+        },
+        {
+          "name": "Outworld Devourer",
+          "rate": "3.1"
+        },
+        {
+          "name": "Bloodseeker",
+          "rate": "3.1"
+        },
+        {
+          "name": "Anti-Mage",
+          "rate": "3.0"
+        },
+        {
+          "name": "Templar Assassin",
+          "rate": "3.0"
+        },
+        {
+          "name": "Puck",
+          "rate": "3.0"
+        },
+        {
+          "name": "Pangolier",
+          "rate": "2.8"
+        },
+        {
+          "name": "Troll Warlord",
+          "rate": "2.8"
+        },
+        {
+          "name": "Weaver",
+          "rate": "2.8"
+        },
+        {
+          "name": "Lifestealer",
+          "rate": "2.7"
+        },
+        {
+          "name": "Ursa",
+          "rate": "2.6"
+        },
+        {
+          "name": "Lina",
+          "rate": "2.3"
+        },
+        {
+          "name": "Queen of Pain",
+          "rate": "2.2"
+        },
+        {
+          "name": "Chaos Knight",
+          "rate": "2.2"
+        },
+        {
+          "name": "Spectre",
+          "rate": "2.1"
+        },
+        {
+          "name": "Arc Warden",
+          "rate": "2.1"
+        }
+      ],
+      "counterItems": [
+        "<a>Pipe of Insight</a> and  <a>Black King Bar</a> significantly reduce Earthshaker's magical damage output.",
+        "<a>Radiance</a> prevents Earthshaker from using  <a>Blink Dagger</a>.",
+        "<a>Eul's Scepter of Divinity</a> can waste Earthshaker's initiations with  <a>Blink Dagger</a> and  <a>Aghanim's Scepter</a> upgraded  <a>Enchant Totem</a>, and to dodge all of his abilities.",
+        "<a>Rod of Atos</a> and it's upgrade  <a>Gleipnir</a> are one of Earthshaker's worst enemies. As they will prevent him from using  <a>Blink Dagger</a>,  <a>Silver Edge</a> and  <a>Aghanim's Scepter</a> upgraded  <a>Enchant Totem</a>.",
+        "<a>Scythe of Vyse</a> prevents Earthshaker from using both, abilities and items.",
+        "<a>Diffusal Blade</a> will wear down Earthshaker's low mana pool.",
+        "<a>Silver Edge</a> can <a>break</a> Aftershock.",
+        "<a>Dust of Appearance</a> can expose Earthshaker if he uses  <a>Silver Edge</a> to escape."
+      ],
+      "lastUpdated": {
+        "counterHeroes": "2024-10-06T15:39:15.381Z",
+        "counterItems": "2024-10-06T15:39:15.381Z"
+      }
+    },
+    "Abaddon": {
+      "counterHeroes": [
+        {
+          "name": "Bristleback",
+          "rate": "3.1"
+        },
+        {
+          "name": "Legion Commander",
+          "rate": "3.1"
+        },
+        {
+          "name": "Slardar",
+          "rate": "3.1"
+        },
+        {
+          "name": "Drow Ranger",
+          "rate": "3.1"
+        },
+        {
+          "name": "Sniper",
+          "rate": "3.1"
+        },
+        {
+          "name": "Hoodwink",
+          "rate": "3.1"
+        },
+        {
+          "name": "Shadow Fiend",
+          "rate": "3.1"
+        },
+        {
+          "name": "Spirit Breaker",
+          "rate": "3.1"
+        },
+        {
+          "name": "Windranger",
+          "rate": "3.0"
+        },
+        {
+          "name": "Anti-Mage",
+          "rate": "3.0"
+        },
+        {
+          "name": "Storm Spirit",
+          "rate": "3.0"
+        },
+        {
+          "name": "Lina",
+          "rate": "3.0"
+        },
+        {
+          "name": "Earth Spirit",
+          "rate": "3.0"
+        },
+        {
+          "name": "Templar Assassin",
+          "rate": "3.0"
+        },
+        {
+          "name": "Clinkz",
+          "rate": "2.9"
+        },
+        {
+          "name": "Medusa",
+          "rate": "2.8"
+        },
+        {
+          "name": "Tinker",
+          "rate": "2.8"
+        },
+        {
+          "name": "Sven",
+          "rate": "2.5"
+        },
+        {
+          "name": "Tiny",
+          "rate": "2.4"
+        },
+        {
+          "name": "Doom",
+          "rate": "2.1"
+        },
+        {
+          "name": "Razor",
+          "rate": "2.1"
+        }
+      ],
+      "counterItems": [
+        "<a>Orchid Malevolence</a> and  <a>Bloodthorn</a> make a supporting Abaddon useless at crucial moments.",
+        "<a>Eul's Scepter of Divinity</a> wastes some duration of Borrowed Time.",
+        "<a>Silver Edge</a> disables Curse of Avernus and Borrowed Time's passive component.",
+        "<a>Dagon</a> and  <a>Ethereal Blade</a> can kill Abaddon before he uses Borrowed Time, forcing him to cast it manually.",
+        "<a>Spirit Vessel</a> and  <a>Shiva's Guard</a> decreases the amount of healing from Borrowed Time.",
+        "<a>Glimmer Cape</a> and  <a>Force Staff</a> allow you to juke him when he's attacking you to prevent his silence to proc."
+      ],
+      "lastUpdated": {
+        "counterHeroes": "2024-10-06T15:47:02.140Z",
+        "counterItems": "2024-10-06T15:47:02.140Z"
+      }
+    },
+    "Shadow_Fiend": {
+      "counterHeroes": [
+        {
+          "name": "Windranger",
+          "rate": "3.0"
+        },
+        {
+          "name": "Naga Siren",
+          "rate": "2.9"
+        },
+        {
+          "name": "Lone Druid",
+          "rate": "2.9"
+        },
+        {
+          "name": "Natures Prophet",
+          "rate": "2.9"
+        },
+        {
+          "name": "Invoker",
+          "rate": "2.8"
+        },
+        {
+          "name": "Weaver",
+          "rate": "2.7"
+        },
+        {
+          "name": "Zeus",
+          "rate": "2.6"
+        },
+        {
+          "name": "Troll Warlord",
+          "rate": "2.6"
+        },
+        {
+          "name": "Storm Spirit",
+          "rate": "2.5"
+        },
+        {
+          "name": "Silencer",
+          "rate": "2.5"
+        },
+        {
+          "name": "Tinker",
+          "rate": "2.4"
+        },
+        {
+          "name": "Outworld Devourer",
+          "rate": "2.4"
+        },
+        {
+          "name": "Necrophos",
+          "rate": "2.3"
+        },
+        {
+          "name": "Lifestealer",
+          "rate": "2.2"
+        },
+        {
+          "name": "Riki",
+          "rate": "2.1"
+        },
+        {
+          "name": "Marci",
+          "rate": "2.1"
+        }
+      ],
+      "counterItems": [
+        "<a>Eul's Scepter of Divinity</a> interrupts Requiem of Souls, or allows the user to dodge it.",
+        "<a>Orchid Malevolence</a> and  <a>Bloodthorn</a> interrupt Requiem of Souls and silences Shadow Fiend.",
+        "<a>Scythe of Vyse</a> and  <a>Abyssal Blade</a> interrupt Requiem of Souls and disables Shadow Fiend.",
+        "<a>Assault Cuirass</a> mitigates Presence of the Dark Lord and Shadow Fiend's high physical damage."
+      ],
+      "lastUpdated": {
+        "counterHeroes": "2024-10-06T15:12:00.402Z",
+        "counterItems": "2024-10-06T15:12:00.402Z"
+      }
+    },
+    "Shadow_Demon": {
+      "counterHeroes": [
+        {
+          "name": "Drow Ranger",
+          "rate": "3.1"
+        },
+        {
+          "name": "Faceless Void",
+          "rate": "3.1"
+        },
+        {
+          "name": "Spectre",
+          "rate": "3.1"
+        },
+        {
+          "name": "Naga Siren",
+          "rate": "2.9"
+        }
+      ],
+      "counterItems": [
+        "<a>Lotus Orb</a> will reflect Disruption and Demonic Purge back to Shadow Demon. Additionally, illusions of Shadow Demon created by the reflected Disruption will spawn under the control of the enemy hero who reflected it.",
+        "<a>Linken's Sphere</a> blocks Disruption and Demonic Purge.",
+        "<a>Force Staff</a> can save the victim if they are able to force through a cliff, to the high ground or create enough distance to retreat into a foggy area.",
+        "<a>Town Portal Scroll</a> can help the victim survive a gank attempt from Shadow Demon if he initiates with a Disruption and has no way to cancel the teleport afterward, while Shadow Poison needs time to stack up and Demonic Purge only deals damage after a lengthy delay."
+      ],
+      "lastUpdated": {
+        "counterHeroes": "2024-10-06T15:12:17.727Z",
+        "counterItems": "2024-10-06T15:12:17.727Z"
+      }
+    },
+    "Lifestealer": {
+      "counterHeroes": [
+        {
+          "name": "Slardar",
+          "rate": "3.1"
+        },
+        {
+          "name": "Luna",
+          "rate": "3.1"
+        },
+        {
+          "name": "Arc Warden",
+          "rate": "3.1"
+        },
+        {
+          "name": "Spirit Breaker",
+          "rate": "3.1"
+        },
+        {
+          "name": "Mirana",
+          "rate": "3.1"
+        },
+        {
+          "name": "Chaos Knight",
+          "rate": "3.0"
+        },
+        {
+          "name": "Outworld Devourer",
+          "rate": "3.0"
+        },
+        {
+          "name": "Slark",
+          "rate": "2.9"
+        },
+        {
+          "name": "Earth Spirit",
+          "rate": "2.7"
+        },
+        {
+          "name": "Centaur Warrunner",
+          "rate": "2.7"
+        },
+        {
+          "name": "Phantom Lancer",
+          "rate": "2.5"
+        },
+        {
+          "name": "Weaver",
+          "rate": "2.5"
+        },
+        {
+          "name": "Templar Assassin",
+          "rate": "2.3"
+        },
+        {
+          "name": "Clinkz",
+          "rate": "2.3"
+        },
+        {
+          "name": "Ursa",
+          "rate": "2.2"
+        },
+        {
+          "name": "Tinker",
+          "rate": "2.2"
+        },
+        {
+          "name": "Troll Warlord",
+          "rate": "2.1"
+        },
+        {
+          "name": "Ember Spirit",
+          "rate": "2.1"
+        }
+      ],
+      "counterItems": [
+        "<a><a>Force Staff</a></a> is very useful to kite Lifestealer in team-fight and to escape from him.  <a><a>Force Staff</a></a> can later be upgraded into  <a>Hurricane Pike</a> that can do the same and which can also increase the attack range of ranged heroes.",
+        "<a>Orchid Malevolence</a> and  <a>Bloodthorn</a> If placed before  <a><a>Rage</a></a> will make Lifestealer unable to use his abilities in a teamfight. And Lifestealer cannot dispel its effect with  <a><a>Rage</a></a>.",
+        "<a>Ghost Scepter</a> is a good protection against Lifestealer as he relies mostly on direct attacks to deal damage and has no other ways of dealing damage outside from Infest. It can be later upgraded into  <a>Ethereal Blade</a>, which can disarm Lifestealer and make him more vulnerable to magic damage. But remember that Lifestealer can dispel its effect with  <a>Rage</a>.",
+        "<a>Manta Style</a> Lifestealer has no way of dealing with illusions and the extra damage from the illusions can damage him more than he can heal.",
+        "<a>Scythe of Vyse</a> If placed before  <a><a>Rage</a></a> will make Lifestealer unable to use neither his abilities nor items in a teamfight. And like silence, Lifestealer cannot dispel its effect with  <a><a>Rage</a></a>.",
+        "<a>Heaven's Halberd</a> gives <a>evasion</a> and an undispellable disarm, making Lifestealer useless if placed before Rage.",
+        "<a>Solar Crest</a>,  <a>Assault Cuirass</a>,  <a>Shiva's Guard</a> and  <a>Crimson Guard</a> items are useful against Lifestealer's mostly-phyiscal damage.",
+        "<a><a>Silver Edge</a></a> if applied before  <a><a>Rage</a></a> can apply an undispellable break that can disable Feast while also giving an escape tool from Lifestealer. And Lifestealer cannot dispel  <a><a>Silver Edge</a></a>'s effect with  <a><a>Rage</a></a>.",
+        "<a><a>Linken's Sphere</a></a> can block  <a>Abyssal Blade</a>,  <a>Open Wounds</a> from  <a>Aghanim's Shard</a> and  <a>Aghanim's Scepter</a> upgraded  <a>Infest</a>, which can force Lifestealer to either choose between one of those three abilities/items, or to purchase items that can be used to pop  <a><a>Linken's Sphere</a></a>'s spellblock like  <a>Diffusal Blade</a> or  <a>Dagon</a>.",
+        "<a><a><a>Lotus Orb</a></a></a> if used before  <a>Rage</a> can reflect  <a>Open Wounds</a> from  <a>Aghanim's Shard</a> and  <a>Abyssal Blade</a> back at Lifestealer if he impulsively uses it on a hero protected by it. However,  <a><a><a>Lotus Orb</a></a></a> cannot reflect  <a><a>Aghanim's Scepter</a></a> upgraded  <a><a>Infest</a></a> back at Lifestealer as  <a><a>Aghanim's Scepter</a></a> upgraded  <a><a>Infest</a></a> is one of the few single-targeted abilities that cannot be reflected by  <a><a><a>Lotus Orb</a></a></a> at all."
+      ],
+      "lastUpdated": {
+        "counterHeroes": "2024-10-06T15:43:56.484Z",
+        "counterItems": "2024-10-06T15:43:56.484Z"
+      }
+    },
+    "Sven": {
+      "counterHeroes": [
+        {
+          "name": "Troll Warlord",
+          "rate": "3.1"
+        },
+        {
+          "name": "Slark",
+          "rate": "3.1"
+        },
+        {
+          "name": "Necrophos",
+          "rate": "3.1"
+        },
+        {
+          "name": "Queen of Pain",
+          "rate": "3.1"
+        },
+        {
+          "name": "Juggernaut",
+          "rate": "3.1"
+        },
+        {
+          "name": "Bristleback",
+          "rate": "3.1"
+        },
+        {
+          "name": "Anti-Mage",
+          "rate": "3.1"
+        },
+        {
+          "name": "Lina",
+          "rate": "3.1"
+        },
+        {
+          "name": "Centaur Warrunner",
+          "rate": "3.0"
+        },
+        {
+          "name": "Ursa",
+          "rate": "3.0"
+        },
+        {
+          "name": "Silencer",
+          "rate": "3.0"
+        },
+        {
+          "name": "Zeus",
+          "rate": "3.0"
+        },
+        {
+          "name": "Magnus",
+          "rate": "2.9"
+        },
+        {
+          "name": "Puck",
+          "rate": "2.9"
+        },
+        {
+          "name": "Mirana",
+          "rate": "2.9"
+        },
+        {
+          "name": "Medusa",
+          "rate": "2.9"
+        },
+        {
+          "name": "Leshrac",
+          "rate": "2.8"
+        },
+        {
+          "name": "Pangolier",
+          "rate": "2.7"
+        },
+        {
+          "name": "Arc Warden",
+          "rate": "2.6"
+        },
+        {
+          "name": "Storm Spirit",
+          "rate": "2.6"
+        },
+        {
+          "name": "Tiny",
+          "rate": "2.5"
+        },
+        {
+          "name": "Sniper",
+          "rate": "2.5"
+        },
+        {
+          "name": "Templar Assassin",
+          "rate": "2.4"
+        },
+        {
+          "name": "Spirit Breaker",
+          "rate": "2.2"
+        }
+      ],
+      "counterItems": [
+        "<a>Force Staff</a> and  <a>Hurricane Pike</a> are used to escape Sven, also can save allies from Storm Hammer.",
+        "<a>Blink Dagger</a> disjoints Storm Hammer in quick hands.",
+        "<a>Ghost Scepter</a> and  <a>Ethereal Blade</a> protect heroes from Sven's physical damage, forcing him to build either  <a>Nullifier</a>,  <a>Revenant's Brooch</a> or  <a>Aghanim's Scepter</a>.",
+        "<a>Heaven's Halberd</a> neuters Sven's main damage source during a teamfight.",
+        "<a>Rod of Atos</a> roots Sven to the ground, making him an easy target.",
+        "<a>Blade Mail</a> reflects Sven's massive damage, recommended for beefy heroes or in combination with  <a>Heart of Tarrasque</a>.",
+        "<a>Scythe of Vyse</a> disables Sven completely unless if he is debuff immune already.",
+        "<a>Linken's Sphere</a> negates Sven's initiations with Storm Hammer.",
+        "<a>Radiance</a> will make Sven miss his attacks more often.",
+        "<a>Abyssal Blade</a> disables Sven even if he is debuff immune.",
+        "<a>Lotus Orb</a> can reflect Storm Hammer back at Sven if he impulsively uses it on a hero protected by it. Both AoE stun and damage function properly."
+      ],
+      "lastUpdated": {
+        "counterHeroes": "2024-10-06T15:43:56.484Z",
+        "counterItems": "2024-10-06T15:43:56.484Z"
       }
     }
   }

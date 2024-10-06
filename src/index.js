@@ -14,7 +14,7 @@ try {
   const Table = require("cli-table3");
   const colors = require("@colors/colors");
   
-  const {displayHelpInstructions, handleError, formatItemOutput, formatHeroOutput} = require('./utils');
+  const { fetchHeroList, displayHelpInstructions, handleError, formatItemOutput, formatHeroOutput} = require('./utils');
   const {minimal_args, getHeroCountersURL, getItemCountersURL} = require('./config/puppeteerConfig')
   const {scrapeCounterHeroes, scrapeCounterItems} = require('./scrapers/index');
 
@@ -28,6 +28,9 @@ try {
   const TIMEOUT = 30000
   const MIN_RATE = 2
   const args = process.argv.slice(2);
+  // const INPUT_HISTORY = []
+  // let inputIndex = -1;
+
   
   if (args.includes("-custom")) {
     const customFlag = ["-items"]
@@ -41,13 +44,17 @@ try {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
+    terminal: true,
   });
     
+  readline.emitKeypressEvents(process.stdin);
+  process.stdin.setRawMode(true);
   
   const processCounter = async (hero, browser) => {
     const existingData = checkHeroData(hero);
     const heroCountersURL = getHeroCountersURL(hero)
     const itemCountersURL = getItemCountersURL(hero)
+
     try {
         let counterHeroes = existingData?.counterHeroes || [];
         let counterItems = existingData?.counterItems || [];
@@ -79,8 +86,6 @@ try {
             }
         }
 
-
-
         if (counterHeroes?.length > 0 && (!args.includes("-items"))) {
             const table = new Table({
                 head: ["Rate", "Hero"],
@@ -97,6 +102,7 @@ try {
             console.log(table.toString());
         } else if (counterHeroes?.length === 0 && (!args.includes("-items"))) {
             console.log(colors.bold.red("No hero data found."));
+            console.log(`Counter heroes URL: ${heroCountersURL}`)
         }
 
         if (counterItems?.length > 0 && (!args.includes("-heroes"))) {
@@ -106,6 +112,7 @@ try {
             setCounterItems(hero, counterItems)
         } else if (counterItems?.length === 0 && (!args.includes("-heroes"))) {
             console.log(colors.bold.red("No item data found."));
+            console.log(`Counter items URL: ${itemCountersURL}`)
         }
 
     } catch (error) {
@@ -113,74 +120,119 @@ try {
     }
   };
   
-  const heroCounter = async (browser, isFirstRequest) => {
+  
+  const heroCounter = async (browser, isFirstRequest, heroList) => {
     const promptMessage = isFirstRequest
-    ? `Enter Hero Name (or type ${colors.red.bold("exit")} to quit)`
-    : "\nEnter Hero Name";
+      ? `Enter Hero Name (or type ${colors.red.bold("exit")} to quit)`
+      : "\nEnter Hero Name";
   
-  
-    rl.question(`${colors.green.bold(promptMessage)}\n${colors.magenta.bold(">")} `,
-      answer => {
-        if (answer.trim().toLowerCase() === "exit" || answer.trim().toLowerCase() === "e") {
+      let input = '';
+      let suggestedHero = ""
+
+    console.log(`${colors.green.bold(promptMessage)}\n${colors.magenta.bold(">")}`);
+
+    const onKeyPress = async (str, key) => {
+      /* 
+      TODO:
+      ?key.name
+      * up                    input=INPUT_HISTORY[i--]
+      * down                  input=INPUT_HISTORY[i++]
+      * tab, (right | left )  input=suggestions[i++, i--]
+      */
+      
+      if (key.name === 'return') {
+        if (input.length === 0) return
+        if (input.trim().toLowerCase() === "exit" || input.trim().toLowerCase() === "e") {
           console.log(colors.bold.green("Exiting..."));
-          rl.close(); 
-          return; 
+          rl.close();
+          return;
         }
-  
+
         try {
+          if (suggestedHero.length > 0) input = suggestedHero
+          suggestedHero = ''
+          
           const ignoredWords = ["of", "the"];
-          let input;
+          let heroInput;
           let filteredAnswer;
-  
-          if (answer.trim().includes("-")) {
-            input = answer.trim().split("-");
-            for (let i = 0; i < input.length; i++) {
-              input[i] = input[i][0].toUpperCase() + input[i].substr(1);
+        
+          if (input.trim().includes("-")) {
+            heroInput = input.trim().split("-");
+            for (let i = 0; i < heroInput.length; i++) {
+              heroInput[i] = heroInput[i][0].toUpperCase() + heroInput[i].slice(1);
             }
-  
-            filteredAnswer = input.join("-");
+        
+            filteredAnswer = heroInput.join("-");
           }
-  
+        
           if (filteredAnswer === undefined) {
-            filteredAnswer = answer.trim().split(" ");
+            filteredAnswer = input.trim().split(" ");
           }
-  
           for (let i = 0; i < filteredAnswer.length; i++) {
             if (!ignoredWords.includes(filteredAnswer[i])) {
-              filteredAnswer[i] =
-                filteredAnswer[i][0].toUpperCase() + filteredAnswer[i].slice(1);
+              filteredAnswer[i] = filteredAnswer[i][0].toUpperCase() + filteredAnswer[i].slice(1);
             }
           }
-  
-          const hero =
-            typeof filteredAnswer === "string"
+
+        
+          const hero = typeof filteredAnswer === "string"
               ? filteredAnswer
               : filteredAnswer.join("_");
-  
-          processCounter(hero, browser)
-            .then(() => {
-              heroCounter(browser, false);
-            })
-            .catch(err => {
-              console.error(err);
-              heroCounter(browser, false); 
-            });
-  
+
+
+          input = '';
+
+          // process.stdin.removeListener('keypress', onKeyPress); 
+          // process.stdin.off('keypress', onKeyPress);
+          
+          console.log(colors.green.bold(`Processing hero: ${hero}`)); 
+          await processCounter(hero, browser);
+
+          // process.stdin.on('keypress', onKeyPress);
+          return
         } catch (err) {
-          console.error("Error processing input:", err);
-          heroCounter(browser, false);
+          console.error(colors.red.bold("Error processing input:", err));
+        } finally {
+          heroCounter(browser, false, heroList); 
         }
+        
+      } else if (key.name === 'backspace') {
+        input = input.slice(0, -1);
+      } else if (key.name === 'escape') {
+        console.log(colors.bold.green("Exiting..."));
+        rl.close();
+        return;
+      } else {
+        if (/^[a-zA-Z\s]$/.test(str)) input += str; 
       }
-    );
+
+      // Suggest heroes as user types
+      const suggestions = heroList.filter(hero => hero.toLowerCase().startsWith(input.toLowerCase()));
+      if (suggestions.length === 1) suggestedHero = suggestions[0]
+      if (suggestions.length > 1) suggestedHero = ''
+
+      console.clear(); // Clear console before showing new prompt
+      console.log(`${colors.green.bold(promptMessage)}\n${colors.magenta.bold(">")} ${input}`); // Show current input
+      if (suggestions.length > 0 && input.length > 0 && suggestions.length !== heroList.length) {
+        console.log(colors.yellow(`Suggestions: ${suggestions.join(', ')}${suggestedHero.length > 0 ? " (Press 'Enter')":''}`)); // Display suggestions
+      }
+    };
+
+    // Attach the keypress event listener
+    process.stdin.removeAllListeners('keypress');
+    process.stdin.on('keypress', onKeyPress);
+    process.stdin.resume();
   };
   
+
   (async () => {
     const browser = await puppeteer.launch({
       headless: true,
       args: minimal_args,
     });
+    const heroList = await fetchHeroList() || [];
   
-    heroCounter(browser, true);
+    heroCounter(browser, true, heroList);
   
     rl.on('close', async () => {
       await browser.close(); 

@@ -13,6 +13,11 @@
         <h3><b>Item Suggestions</b></h3>
         <img src="https://user-images.githubusercontent.com/52050303/205475912-39643717-daba-43b8-8e6a-d5f5c99decae.png" />
     </div>
+    <div>
+        <h3>Searching</h3>
+        <img src="https://github.com/user-attachments/assets/681b0e47-dde9-4600-8c30-e86a9e61510a" />
+    </div>
+
 </div>
 
 ### **Features**
@@ -54,7 +59,6 @@ dota2-cli # To run script (Linux only)
 
 # **Usage**
 
-
 ```sh
 # Inside parent dir
 cd Dota2-HeroCounters-CLI
@@ -65,17 +69,13 @@ cd Dota2-HeroCounters-CLI
 node src/index.js # w/o any argument it will suggest both items and heroes
 node src/index.js -items # suggest only items
 ```
-### *npm*
-```sh
-# npm start -- [flags]
-npm start -- -heroes -utility # only utility heroes
-```
 ### *Shortcut*
 Open dota2-cli.lnk on your desktop
 ```sh
 Enter flags (e.g., -items -heroes): -heroes -utility
-
 # You can run this from parent dir as well
+npm start 
+# OR
 node run.js
 ```
 
